@@ -73,7 +73,8 @@ struct LoginView: View {
                 Divider() // - полоска серая
                 // не используется navigation destination потому что не передаем туда data. здесь просо отображение экрана по нажатию
                 NavigationLink {
-                    Text("Sign up view")
+                    RegistrationView()
+                        .navigationBarBackButtonHidden()
                 } label: {
                     HStack {
                         Text("Don't have an account?")
@@ -82,6 +83,7 @@ struct LoginView: View {
                             .fontWeight(.semibold)
                     }
                     .font(.footnote)
+                    .foregroundColor(Color(.systemBlue))
                 }
                 .padding(.vertical)
                 
