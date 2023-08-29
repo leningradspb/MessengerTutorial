@@ -17,6 +17,8 @@
 		26B4EA0B2A9E002A0070C4DD /* ActiveNowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA0A2A9E002A0070C4DD /* ActiveNowView.swift */; };
 		26B4EA0D2A9E18DB0070C4DD /* InboxRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA0C2A9E18DB0070C4DD /* InboxRowView.swift */; };
 		26B4EA102A9E1E340070C4DD /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA0F2A9E1E340070C4DD /* NewMessageView.swift */; };
+		26B4EA152A9E275B0070C4DD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA142A9E275B0070C4DD /* ProfileView.swift */; };
+		26B4EA172A9E28CD0070C4DD /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA162A9E28CD0070C4DD /* SettingsOptionsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		26B4EA0A2A9E002A0070C4DD /* ActiveNowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveNowView.swift; sourceTree = "<group>"; };
 		26B4EA0C2A9E18DB0070C4DD /* InboxRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxRowView.swift; sourceTree = "<group>"; };
 		26B4EA0F2A9E1E340070C4DD /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		26B4EA142A9E275B0070C4DD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		26B4EA162A9E28CD0070C4DD /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +108,7 @@
 				26B4EA092A9E000A0070C4DD /* ActiveNow */,
 				26B4EA062A9DFCCC0070C4DD /* Inbox */,
 				26B4EA0E2A9E1E1E0070C4DD /* NewMessage */,
+				26B4EA112A9E273D0070C4DD /* Profile */,
 				26B4E9FE2A9D18E20070C4DD /* Root */,
 			);
 			path = Core;
@@ -171,6 +176,31 @@
 				26B4EA0F2A9E1E340070C4DD /* NewMessageView.swift */,
 			);
 			path = NewMessage;
+			sourceTree = "<group>";
+		};
+		26B4EA112A9E273D0070C4DD /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				26B4EA122A9E27460070C4DD /* View */,
+				26B4EA132A9E274A0070C4DD /* ViewModel */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		26B4EA122A9E27460070C4DD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				26B4EA142A9E275B0070C4DD /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		26B4EA132A9E274A0070C4DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				26B4EA162A9E28CD0070C4DD /* SettingsOptionsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,12 +274,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				26B4EA0D2A9E18DB0070C4DD /* InboxRowView.swift in Sources */,
+				26B4EA152A9E275B0070C4DD /* ProfileView.swift in Sources */,
 				26B4EA102A9E1E340070C4DD /* NewMessageView.swift in Sources */,
 				26B4EA012A9D19160070C4DD /* LoginView.swift in Sources */,
 				26B4E9EF2A9D18790070C4DD /* ContentView.swift in Sources */,
 				26B4EA082A9DFCE50070C4DD /* InboxView.swift in Sources */,
 				26B4EA0B2A9E002A0070C4DD /* ActiveNowView.swift in Sources */,
 				26B4E9ED2A9D18790070C4DD /* MessengerTutorialApp.swift in Sources */,
+				26B4EA172A9E28CD0070C4DD /* SettingsOptionsViewModel.swift in Sources */,
 				26B4EA052A9DF8790070C4DD /* RegistrationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
