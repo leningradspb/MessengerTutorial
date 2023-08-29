@@ -11,7 +11,15 @@ struct InboxView: View {
     var body: some View {
         NavigationStack {
             ScrollView {
+                ActiveNowView()
                 
+                List {
+                    ForEach(0...20, id: \.self) { message in
+                        InboxRowView()
+                    }
+                }
+                .listStyle(.plain)
+                .frame(height: UIScreen.main.bounds.height - 120)
             } // ScrollView
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
