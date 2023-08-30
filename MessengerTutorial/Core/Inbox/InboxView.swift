@@ -31,7 +31,7 @@ struct InboxView: View {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack {
                         NavigationLink(value: user) {
-                            Image(systemName: "person.circle.fill")
+                            CircularProfileImageView(user: user, size: .xsmall)
                         }
                         .navigationDestination(for: User.self) { user in
                             ProfileView(user: user)
