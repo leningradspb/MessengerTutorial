@@ -19,6 +19,7 @@
 		26B4EA102A9E1E340070C4DD /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA0F2A9E1E340070C4DD /* NewMessageView.swift */; };
 		26B4EA152A9E275B0070C4DD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA142A9E275B0070C4DD /* ProfileView.swift */; };
 		26B4EA172A9E28CD0070C4DD /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA162A9E28CD0070C4DD /* SettingsOptionsViewModel.swift */; };
+		26B4EA1B2A9F86C00070C4DD /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA1A2A9F86C00070C4DD /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		26B4EA0F2A9E1E340070C4DD /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
 		26B4EA142A9E275B0070C4DD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		26B4EA162A9E28CD0070C4DD /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
+		26B4EA1A2A9F86C00070C4DD /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,6 +201,7 @@
 			isa = PBXGroup;
 			children = (
 				26B4EA162A9E28CD0070C4DD /* SettingsOptionsViewModel.swift */,
+				26B4EA1A2A9F86C00070C4DD /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -280,6 +283,7 @@
 				26B4E9EF2A9D18790070C4DD /* ContentView.swift in Sources */,
 				26B4EA082A9DFCE50070C4DD /* InboxView.swift in Sources */,
 				26B4EA0B2A9E002A0070C4DD /* ActiveNowView.swift in Sources */,
+				26B4EA1B2A9F86C00070C4DD /* ProfileViewModel.swift in Sources */,
 				26B4E9ED2A9D18790070C4DD /* MessengerTutorialApp.swift in Sources */,
 				26B4EA172A9E28CD0070C4DD /* SettingsOptionsViewModel.swift in Sources */,
 				26B4EA052A9DF8790070C4DD /* RegistrationView.swift in Sources */,
