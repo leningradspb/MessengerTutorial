@@ -20,6 +20,7 @@
 		26B4EA152A9E275B0070C4DD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA142A9E275B0070C4DD /* ProfileView.swift */; };
 		26B4EA172A9E28CD0070C4DD /* SettingsOptionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA162A9E28CD0070C4DD /* SettingsOptionsViewModel.swift */; };
 		26B4EA1B2A9F86C00070C4DD /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA1A2A9F86C00070C4DD /* ProfileViewModel.swift */; };
+		26B4EA1D2A9F9F1D0070C4DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B4EA1C2A9F9F1D0070C4DD /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		26B4EA142A9E275B0070C4DD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		26B4EA162A9E28CD0070C4DD /* SettingsOptionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsOptionsViewModel.swift; sourceTree = "<group>"; };
 		26B4EA1A2A9F86C00070C4DD /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		26B4EA1C2A9F9F1D0070C4DD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		26B4EA022A9D192A0070C4DD /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				26B4EA1C2A9F9F1D0070C4DD /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -284,6 +287,7 @@
 				26B4EA082A9DFCE50070C4DD /* InboxView.swift in Sources */,
 				26B4EA0B2A9E002A0070C4DD /* ActiveNowView.swift in Sources */,
 				26B4EA1B2A9F86C00070C4DD /* ProfileViewModel.swift in Sources */,
+				26B4EA1D2A9F9F1D0070C4DD /* User.swift in Sources */,
 				26B4E9ED2A9D18790070C4DD /* MessengerTutorialApp.swift in Sources */,
 				26B4EA172A9E28CD0070C4DD /* SettingsOptionsViewModel.swift in Sources */,
 				26B4EA052A9DF8790070C4DD /* RegistrationView.swift in Sources */,

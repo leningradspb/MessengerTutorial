@@ -10,6 +10,7 @@ import PhotosUI
 
 struct ProfileView: View {
     @StateObject var viewModel = ProfileViewModel()
+    let user: User
     
     var body: some View {
         VStack {
@@ -19,6 +20,7 @@ struct ProfileView: View {
                     if let profileImage = viewModel.profileImage {
                         profileImage
                             .resizable()
+                            .scaledToFill()
                             .frame(width: 80, height: 80)
                             .clipShape(Circle())
                     } else {
@@ -29,7 +31,7 @@ struct ProfileView: View {
                     }
                 }
                 
-                Text("User name")
+                Text(user.fullName)
                     .font(.title2)
                     .fontWeight(.semibold)
             } // header
@@ -72,6 +74,6 @@ struct ProfileView: View {
 
 struct ProfileView_Previews: PreviewProvider {
     static var previews: some View {
-        ProfileView()
+        ProfileView(user: User.mock_user)
     }
 }

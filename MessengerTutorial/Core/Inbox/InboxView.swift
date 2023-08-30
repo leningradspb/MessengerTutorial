@@ -9,6 +9,7 @@ import SwiftUI
 
 struct InboxView: View {
     @State private var showNewMessageView = false
+    @State private var user = User.mock_user
     
     var body: some View {
         NavigationStack {
@@ -29,7 +30,12 @@ struct InboxView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack {
-                        Image(systemName: "person.circle.fill")
+                        NavigationLink(value: user) {
+                            Image(systemName: "person.circle.fill")
+                        }
+                        .navigationDestination(for: User.self) { user in
+                            ProfileView(user: user)
+                        }
                         
                         Text("Chats")
                             .font(.title)
