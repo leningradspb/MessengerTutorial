@@ -15,6 +15,7 @@ class AuthService {
     static let shared = AuthService()
     init() {
         self.userSession = Auth.auth().currentUser
+        Task { try await UserService.shared.fetchCurrentUser() }
         print("DEBUG: \(userSession?.uid)")
     }
     

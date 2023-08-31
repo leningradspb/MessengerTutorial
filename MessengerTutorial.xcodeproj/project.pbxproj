@@ -34,6 +34,7 @@
 		26D083B02AA0B670005B44C4 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083AF2AA0B670005B44C4 /* RegistrationViewModel.swift */; };
 		26D083B22AA0B68E005B44C4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083B12AA0B68E005B44C4 /* AuthService.swift */; };
 		26D083B42AA0F990005B44C4 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083B32AA0F990005B44C4 /* ContentViewModel.swift */; };
+		26D083B62AA106D5005B44C4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083B52AA106D5005B44C4 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -61,6 +62,7 @@
 		26D083AF2AA0B670005B44C4 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		26D083B12AA0B68E005B44C4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		26D083B32AA0F990005B44C4 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		26D083B52AA106D5005B44C4 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 		26B4EA032A9D19370070C4DD /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				26D083B52AA106D5005B44C4 /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				26D083982A9FB437005B44C4 /* CircularProfileImageView.swift in Sources */,
 				26B4EA082A9DFCE50070C4DD /* InboxView.swift in Sources */,
 				26D083AE2AA0B646005B44C4 /* LoginViewModel.swift in Sources */,
+				26D083B62AA106D5005B44C4 /* UserService.swift in Sources */,
 				26B4EA0B2A9E002A0070C4DD /* ActiveNowView.swift in Sources */,
 				26B4EA1B2A9F86C00070C4DD /* ProfileViewModel.swift in Sources */,
 				26B4EA1D2A9F9F1D0070C4DD /* User.swift in Sources */,
