@@ -33,6 +33,7 @@
 		26D083AE2AA0B646005B44C4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083AD2AA0B646005B44C4 /* LoginViewModel.swift */; };
 		26D083B02AA0B670005B44C4 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083AF2AA0B670005B44C4 /* RegistrationViewModel.swift */; };
 		26D083B22AA0B68E005B44C4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083B12AA0B68E005B44C4 /* AuthService.swift */; };
+		26D083B42AA0F990005B44C4 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083B32AA0F990005B44C4 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		26D083AD2AA0B646005B44C4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		26D083AF2AA0B670005B44C4 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		26D083B12AA0B68E005B44C4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		26D083B32AA0F990005B44C4 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 		26B4E9FE2A9D18E20070C4DD /* Root */ = {
 			isa = PBXGroup;
 			children = (
+				26D083B32AA0F990005B44C4 /* ContentViewModel.swift */,
 				26B4E9EE2A9D18790070C4DD /* ContentView.swift */,
 			);
 			path = Root;
@@ -357,6 +360,7 @@
 				26D083B02AA0B670005B44C4 /* RegistrationViewModel.swift in Sources */,
 				26B4EA152A9E275B0070C4DD /* ProfileView.swift in Sources */,
 				26B4EA102A9E1E340070C4DD /* NewMessageView.swift in Sources */,
+				26D083B42AA0F990005B44C4 /* ContentViewModel.swift in Sources */,
 				26B4EA012A9D19160070C4DD /* LoginView.swift in Sources */,
 				26D0839B2A9FB6D9005B44C4 /* ChatView.swift in Sources */,
 				26D083B22AA0B68E005B44C4 /* AuthService.swift in Sources */,
