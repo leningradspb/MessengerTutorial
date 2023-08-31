@@ -30,6 +30,9 @@
 		26D083A62AA0B505005B44C4 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 26D083A52AA0B505005B44C4 /* FirebaseFirestore */; };
 		26D083A82AA0B505005B44C4 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 26D083A72AA0B505005B44C4 /* FirebaseFirestoreSwift */; };
 		26D083AA2AA0B505005B44C4 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 26D083A92AA0B505005B44C4 /* FirebaseStorage */; };
+		26D083AE2AA0B646005B44C4 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083AD2AA0B646005B44C4 /* LoginViewModel.swift */; };
+		26D083B02AA0B670005B44C4 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083AF2AA0B670005B44C4 /* RegistrationViewModel.swift */; };
+		26D083B22AA0B68E005B44C4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083B12AA0B68E005B44C4 /* AuthService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +56,9 @@
 		26D0839C2AA09F68005B44C4 /* ChatMessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
 		26D0839E2AA0B016005B44C4 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 		26D083A02AA0B46B005B44C4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		26D083AD2AA0B646005B44C4 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		26D083AF2AA0B670005B44C4 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		26D083B12AA0B68E005B44C4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,7 +148,9 @@
 		26B4E9FD2A9D18DC0070C4DD /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				26D083AC2AA0B60F005B44C4 /* ViewModel */,
 				26B4E9FF2A9D18EF0070C4DD /* View */,
+				26D083AB2AA0B609005B44C4 /* Service */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -248,6 +256,23 @@
 			path = Chat;
 			sourceTree = "<group>";
 		};
+		26D083AB2AA0B609005B44C4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				26D083B12AA0B68E005B44C4 /* AuthService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		26D083AC2AA0B60F005B44C4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				26D083AD2AA0B646005B44C4 /* LoginViewModel.swift */,
+				26D083AF2AA0B670005B44C4 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -329,15 +354,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				26B4EA0D2A9E18DB0070C4DD /* InboxRowView.swift in Sources */,
+				26D083B02AA0B670005B44C4 /* RegistrationViewModel.swift in Sources */,
 				26B4EA152A9E275B0070C4DD /* ProfileView.swift in Sources */,
 				26B4EA102A9E1E340070C4DD /* NewMessageView.swift in Sources */,
 				26B4EA012A9D19160070C4DD /* LoginView.swift in Sources */,
 				26D0839B2A9FB6D9005B44C4 /* ChatView.swift in Sources */,
+				26D083B22AA0B68E005B44C4 /* AuthService.swift in Sources */,
 				26B4E9EF2A9D18790070C4DD /* ContentView.swift in Sources */,
 				26D0839D2AA09F68005B44C4 /* ChatMessageCell.swift in Sources */,
 				26D0839F2AA0B016005B44C4 /* ChatBubble.swift in Sources */,
 				26D083982A9FB437005B44C4 /* CircularProfileImageView.swift in Sources */,
 				26B4EA082A9DFCE50070C4DD /* InboxView.swift in Sources */,
+				26D083AE2AA0B646005B44C4 /* LoginViewModel.swift in Sources */,
 				26B4EA0B2A9E002A0070C4DD /* ActiveNowView.swift in Sources */,
 				26B4EA1B2A9F86C00070C4DD /* ProfileViewModel.swift in Sources */,
 				26B4EA1D2A9F9F1D0070C4DD /* User.swift in Sources */,
