@@ -49,6 +49,7 @@ class AuthService {
         do {
             try Auth.auth().signOut()
             self.userSession = nil
+            UserService.shared.currentUser = nil
         } catch {
             print("Failed signOut")
         }
