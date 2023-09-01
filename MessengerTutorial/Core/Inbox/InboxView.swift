@@ -9,7 +9,7 @@ import SwiftUI
 
 struct InboxView: View {
     @State private var showNewMessageView = false
-    @State private var user = User.mock_user
+    @StateObject private var viewModel = InboxViewModel()
     
     var body: some View {
         NavigationStack {
@@ -30,8 +30,8 @@ struct InboxView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     HStack {
-                        NavigationLink(value: user) {
-                            CircularProfileImageView(user: user, size: .xsmall)
+                        NavigationLink(value: viewModel.currentUser) {
+                            CircularProfileImageView(user: viewModel.currentUser, size: .xsmall)
                         }
                         .navigationDestination(for: User.self) { user in
                             ProfileView(user: user)
@@ -45,6 +45,7 @@ struct InboxView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
+//                        AuthService.shared.signOut()
                         showNewMessageView.toggle()
                     } label: {
                         Image(systemName: "square.and.pencil.circle.fill")

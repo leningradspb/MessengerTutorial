@@ -15,7 +15,7 @@ class UserService {
     static let shared = UserService()
     
     init() {
-        
+//        Task { try await fetchCurrentUser() }
     }
     
     @MainActor

@@ -35,6 +35,7 @@
 		26D083B22AA0B68E005B44C4 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083B12AA0B68E005B44C4 /* AuthService.swift */; };
 		26D083B42AA0F990005B44C4 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083B32AA0F990005B44C4 /* ContentViewModel.swift */; };
 		26D083B62AA106D5005B44C4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083B52AA106D5005B44C4 /* UserService.swift */; };
+		26D083B82AA1BC7B005B44C4 /* InboxViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D083B72AA1BC7B005B44C4 /* InboxViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		26D083B12AA0B68E005B44C4 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		26D083B32AA0F990005B44C4 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		26D083B52AA106D5005B44C4 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		26D083B72AA1BC7B005B44C4 /* InboxViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InboxViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +200,7 @@
 			children = (
 				26B4EA072A9DFCE50070C4DD /* InboxView.swift */,
 				26B4EA0C2A9E18DB0070C4DD /* InboxRowView.swift */,
+				26D083B72AA1BC7B005B44C4 /* InboxViewModel.swift */,
 			);
 			path = Inbox;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26B4EA0D2A9E18DB0070C4DD /* InboxRowView.swift in Sources */,
+				26D083B82AA1BC7B005B44C4 /* InboxViewModel.swift in Sources */,
 				26D083B02AA0B670005B44C4 /* RegistrationViewModel.swift in Sources */,
 				26B4EA152A9E275B0070C4DD /* ProfileView.swift in Sources */,
 				26B4EA102A9E1E340070C4DD /* NewMessageView.swift in Sources */,
