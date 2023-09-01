@@ -8,6 +8,7 @@
 import Foundation
 import Combine
 
+@MainActor
 class InboxViewModel: ObservableObject {
     @Published var currentUser: User?
     private var cancellables = Set<AnyCancellable>()
