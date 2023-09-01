@@ -15,7 +15,7 @@ class AuthService {
     static let shared = AuthService()
     init() {
         self.userSession = Auth.auth().currentUser
-        Task { try await UserService.shared.fetchCurrentUser() }
+        loadCurrentUserData()
         print("DEBUG: \(userSession?.uid)")
     }
     
@@ -24,7 +24,7 @@ class AuthService {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
-            Task { try await UserService.shared.fetchCurrentUser() }
+            loadCurrentUserData()
             print("Debug: log in user \(result.user.uid)")
         } catch {
             print("DEBUG: ERROR! login catch block \(error.localizedDescription)")
@@ -36,9 +36,9 @@ class AuthService {
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.userSession = result.user
-            Task { try await UserService.shared.fetchCurrentUser() }
             print("Debug: crated user \(result.user.uid)")
             try await self.uploadUserData(email: email, fullName: fullName, id: result.user.uid)
+            loadCurrentUserData()
         } catch {
             print("DEBUG: ERROR! createUser catch block \(error.localizedDescription)")
         }
@@ -58,5 +58,9 @@ class AuthService {
         let user = User(id: id, fullName: fullName, email: email)
         guard let encodedUser = try? Firestore.Encoder().encode(user) else { return }
         try await Firestore.firestore().collection("users").document(id).setData(encodedUser)
+    }
+    
+    private func loadCurrentUserData() {
+        Task { try await UserService.shared.fetchCurrentUser() }
     }
 }
