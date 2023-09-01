@@ -9,7 +9,7 @@ import Foundation
 import Firebase
 
 struct MessageService {
-    private let messagesCollection = Firestore.firestore().collection("messages")
+    private static let messagesCollection = Firestore.firestore().collection("messages")
     
     static func sendMessage(_ message: String, toUser: User) {
         guard let currentUserID = UserService.shared.currentUser?.id else { return }
