@@ -70,8 +70,8 @@ struct ProfileView: View {
     }
 }
 
-struct ProfileView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileView(user: User.mock_user)
-    }
-}
+//struct ProfileView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        ProfileView(user: User.mock_user)
+//    }
+//}
