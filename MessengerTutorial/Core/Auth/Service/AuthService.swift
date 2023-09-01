@@ -24,6 +24,7 @@ class AuthService {
         do {
             let result = try await Auth.auth().signIn(withEmail: email, password: password)
             self.userSession = result.user
+            Task { try await UserService.shared.fetchCurrentUser() }
             print("Debug: log in user \(result.user.uid)")
         } catch {
             print("DEBUG: ERROR! login catch block \(error.localizedDescription)")
@@ -35,6 +36,7 @@ class AuthService {
         do {
             let result = try await Auth.auth().createUser(withEmail: email, password: password)
             self.userSession = result.user
+            Task { try await UserService.shared.fetchCurrentUser() }
             print("Debug: crated user \(result.user.uid)")
             try await self.uploadUserData(email: email, fullName: fullName, id: result.user.uid)
         } catch {
